@@ -11,13 +11,15 @@ import UIKit
 
 
 // MARK: - 객체 지향의 핵심
+// public, open, internal, private, fileprivate
 public class Person {
     func speak() {
         print("hello!")
         
     }
 }
-internal class LeeYong: Person {
+
+class LeeYong: Person {
     var major: String = "iOS"
     override func speak() {
         print("aaaaa")
@@ -42,13 +44,13 @@ class Grammar {
     var string: String = "hello"
     var list: [String] = ["a", "aaewe", "bbbbb", "a"]
     var dictionary: [String: String] = ["key": "value"]
-    var set: Set = ["A", "A", "A", "B"]  //["A","B"]
+    var set: Set = ["A", "A", "A", "B"]  // ["A","B"]
     
     
     // MARK: - Optional Binding
     
-    var guardOptional: Int? = 0 // Int? = Optional<Int>
-    var letOptional: Optional<Int> = 2
+    var guardOptional: Int? = nil // Int? = Optional<Int>
+    var letOptional: Optional<Int> = nil
     
     func letOptionalChaining() {
         print(letOptional)
@@ -73,7 +75,7 @@ class Grammar {
     }
     
     // MARK: function
-    
+
     func add(_ a: Int, _ b: Int) -> Int {
         return a + b
     }
@@ -83,14 +85,16 @@ class Grammar {
     func argumentFunc(_ a: String) {
         print(a)
     }
+    // argumentfucn("hello")
     
     func argumentFunc(a: String) {
         print(a)
     }
-    
+    // argumentfucn(a: "hello")
     func argumentFunc(some a: String) {
         print(a)
     }
+    // argumentfucn(some: "hello")
     
     
     // MARK: - Loop
@@ -127,6 +131,23 @@ class Grammar {
     }
 }
 
+// MARK: - 고차함수 (파이썬: 람다함수) : 클로저 (Clojure)
+// 함수형 프로그래밍
+// 함수를 변수
+// 얘네들 때문에 delegate 다 대체됨
+
+class Clojure {
+    var variableClojure: (_ a: Int, _ b: Int) -> Int = { a, b in
+        return a + b
+    }
+    
+    func add(_ a: Int, _ b: Int) -> Int {
+        return a + b
+    }
+}
+
+// swift: oop
+// ❤️POP❤️
 
 // MARK: - Protocol
 
@@ -134,7 +155,25 @@ protocol ProtocolTest {
     var obligation: Int { get set }
     func mandatory()
 }
+
+
 //
-//class ProtocolClass: ProtocolTest {
+//class Test: ProtocolTest {
+//    var obligation: Int
 //
+//    func mandatory() {
+//
+//    }
 //}
+
+
+
+
+
+
+// AutoLayout
+
+
+// 1. Frame (좌표계) x: 300, y: 700, width: 400, height: 100 잘안씀 거의 안씀
+// 2. Auto Layout -> 관계값 
+

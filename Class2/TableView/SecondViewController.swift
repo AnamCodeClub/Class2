@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+// delegate pattern
+
+
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     lazy var list = ["이용준", "전동혁", "이호영", "김남오", "기타 등등"] + Array(repeating: "test", count: 100)
     
@@ -25,7 +28,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return list.count
     }
     
+    // Celll 재사용
+    // Queue ->
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as? CustomTableViewCell else { return UITableViewCell() }
         
         cell.customLabel.text = list[indexPath.row]

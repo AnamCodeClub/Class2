@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150434BA281ABE4300380F71 /* DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150434B9281ABE4300380F71 /* DelegatePattern.swift */; };
 		15A844912810699100AC5729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A844902810699100AC5729 /* AppDelegate.swift */; };
 		15A844932810699100AC5729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A844922810699100AC5729 /* SceneDelegate.swift */; };
 		15A844952810699100AC5729 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A844942810699100AC5729 /* FirstViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150434B9281ABE4300380F71 /* DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePattern.swift; sourceTree = "<group>"; };
 		15A8448D2810699100AC5729 /* Class2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A844902810699100AC5729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15A844922810699100AC5729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				15A844CB281078CA00AC5729 /* Swift.swift */,
+				150434B9281ABE4300380F71 /* DelegatePattern.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A844C92810781300AC5729 /* CustomTableViewCell.swift in Sources */,
+				150434BA281ABE4300380F71 /* DelegatePattern.swift in Sources */,
 				15A844C228106B7800AC5729 /* SegueViewController.swift in Sources */,
 				15A844952810699100AC5729 /* FirstViewController.swift in Sources */,
 				15A844912810699100AC5729 /* AppDelegate.swift in Sources */,

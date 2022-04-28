@@ -11,6 +11,7 @@ import UIKit
 class SegueViewController: UIViewController {
     @IBOutlet var label: UILabel!
     var someString: String? = nil
+    var number: Int = 0
     
     
     
